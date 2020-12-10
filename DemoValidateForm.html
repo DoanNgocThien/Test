@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <script type ="text/javascript">
+    function validate()
+    {
+        var elUsername = document.getElementById("txtUsername");
+        if(elUsername != null)
+        {
+            var userName = elUsername.value;
+            if(userName == '')
+            {
+                alert("Tên đăng nhập không được để trống!");
+                return;
+            }   
+
+        }
+
+        var elPwd = document.getElementById("txtPassword");
+        if(elPwd != null)
+        {
+            var pwd = elPwd.value;
+            if(pwd == '')
+            {
+                alert("Mật khẩu không được để trống!");
+                return;
+            }   
+
+        }
+    }
+
+    </script>
+</head>
+<body>
+<form action="" method="POST">
+    <label>Tên đăng nhập</label><br>
+    <input type="text" id="txtUsername"><br>
+    <label>Password</label><br>
+    <input type="password" id="txtPassword"><br> 
+    <input type="submit" onclick="validate()" value="Đăng nhập">
+</form>
+</body>
+</html>
